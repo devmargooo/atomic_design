@@ -1,7 +1,7 @@
 import React, {ChangeEvent} from "react";
 import styles from "./Input.module.css";
 
-interface IInputProps {
+export interface IInputProps {
     value:string;
     setValue(newValue:string):void;
 }

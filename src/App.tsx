@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import {Input} from "./atoms/Input/Input";
+import {LabelledInput} from "./molecules/LabelledInput";
 
 function App() {
   const [name, setName] = React.useState<string>("");
   return (
     <div className="App">
-        <Input value={name} setValue={setName}/>
+        <LabelledInput value={name} setValue={setName} label="Кто вы?:)"/>
     </div>
   );
 }
