@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
-import {LabelledInput} from "./molecules/LabelledInput";
+import {FormBody} from "./organisms/FormBody";
 
 function App() {
   const [name, setName] = React.useState<string>("");
   return (
     <div className="App">
-        <LabelledInput value={name} setValue={setName} label="Кто вы?:)"/>
+        <FormBody fields={[{
+            value:name,
+            setter:setName,
+            label:"Кто вы?:)"
+        }]}/>
     </div>
   );
 }
